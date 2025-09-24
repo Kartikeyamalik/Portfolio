@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kartikeya Malik — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#home" class="logo">Kartikeya Malik</a>
+      </div>
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi — I'm Kartikeya</h1>
+          <p class="tagline">Final-year B.Tech (CS+AI) student at IIIT Delhi. I build ML & CV systems, recommender engines, and scalable data-driven apps.</p>
+          <div class="cta">
+            <a href="#projects" class="btn">See Projects</a>
+            <a href="https://github.com/YOUR-GITHUB" class="btn ghost" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="profile-circle">KM</div>
+          <ul class="quick-stats">
+            <li><strong>ML, CV</strong><span>Applied ML & Vision</span></li>
+            <li><strong>300+</strong><span>Problems solved</span></li>
+            <li><strong>Amazon</strong><span>ML Summer School '25</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        Final-year B.Tech (Computer Science & Artificial Intelligence) student at IIIT Delhi with hands-on experience in machine learning, computer vision, and database systems.
+        Focus areas include anomaly detection, recommender systems, and production-ready ML pipelines. Proficient in Python, Java, C++, SQL, PyTorch and TensorFlow.
+      </p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Selected Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project">
+          <div class="project-header">
+            <h3>Video Anomaly Detection System</h3>
+            <span class="meta">Jan 2025 – May 2025 • Team: 4</span>
+          </div>
+          <p>Real-time anomaly detection for CCTV using S3R & 13D features, end-to-end inference pipeline, anomaly scoring and live alert dashboard.</p>
+          <div class="project-links">
+            <a href="https://github.com/YOUR-LINK" target="_blank" rel="noopener">View code</a>
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-header">
+            <h3>Movie Recommendation System</h3>
+            <span class="meta">Aug 2024 – Nov 2024 • Team: 4</span>
+          </div>
+          <p>Hybrid recommender combining content-based and collaborative filtering; implemented similarity metrics and offline evaluation pipeline.</p>
+          <div class="project-links">
+            <a href="https://github.com/YOUR-LINK" target="_blank" rel="noopener">View code</a>
+            <a href="#" target="_blank" rel="noopener">Report</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-header">
+            <h3>Whepto Shopping App (DBMS)</h3>
+            <span class="meta">Jan 2024 – May 2024 • Team: 2</span>
+          </div>
+          <p>Shopping app demonstrating robust cart management, search and transactional flows using SQL and normalized relational design.</p>
+          <div class="project-links">
+            <a href="https://github.com/YOUR-LINK" target="_blank" rel="noopener">View code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section container">
+      <h2>Education</h2>
+      <div class="edu">
+        <div class="edu-item">
+          <h3>Indraprastha Institute of Information Technology, Delhi (IIIT Delhi)</h3>
+          <p>B.Tech — Computer Science and Artificial Intelligence (2022 – Present) • CGPA: 6.61/10 (till 6th Sem)</p>
+        </div>
+        <div class="edu-item">
+          <h3>Mamta Modern Sr. Sec. School, Delhi (CBSE)</h3>
+          <p>Class XII: 88.6% • Class X: 82% (2018 – 2021)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email</strong><br><a href="mailto:kartikeya22243@iiitd.ac.in">kartikeya22243@iiitd.ac.in</a></p>
+          <p><strong>Location</strong><br>New Delhi, India</p>
+        </div>
+        <div>
+          <p><strong>Links</strong><br>
+            <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener">GitHub</a> ·
+            <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+          <p><strong>Availability</strong><br>Open to internships / full-time ML roles</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Kartikeya Malik — Built with HTML, CSS & JavaScript</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
