@@ -1,0 +1,155 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#98a0b3;
+  --accent:#6ee7b7;
+  --white:#e6eef8;
+  --glass: rgba(255,255,255,0.03);
+  --container: 1100px;
+  --radius:10px;
+  --gap:1rem;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#071021 0%, #081827 100%);
+  color:var(--muted);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  font-size:15px;
+}
+
+.container{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* Header */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:40;
+  background: linear-gradient(180deg, rgba(7,10,15,0.6), rgba(7,10,15,0.4));
+  backdrop-filter: blur(6px);
+  border-bottom:1px solid rgba(255,255,255,0.02);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 0;
+}
+.logo{
+  color:var(--white);
+  text-decoration:none;
+  font-weight:700;
+  letter-spacing:0.2px;
+  font-size:18px;
+}
+.nav a{
+  color:var(--muted);
+  margin-left:18px;
+  text-decoration:none;
+  font-weight:600;
+}
+.nav a:hover{color:var(--white)}
+.nav-toggle{
+  display:none;
+  background:none;
+  border:0;
+}
+.nav-toggle span{
+  display:block;
+  width:22px;height:2px;margin:4px 0;background:var(--white);
+  border-radius:2px;opacity:0.85;
+}
+
+/* Hero */
+.hero{
+  padding:48px 0 28px 0;
+}
+.hero-inner{
+  display:grid;
+  grid-template-columns: 1fr 320px;
+  gap:32px;
+  align-items:start;
+}
+.hero-text h1{
+  margin:0 0 8px 0;
+  color:var(--white);
+  font-size:34px;
+  line-height:1.05;
+}
+.tagline{
+  color:var(--muted);
+  margin:6px 0 18px 0;
+  max-width:60ch;
+}
+.cta .btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  background:var(--accent);
+  color:#042226;
+  font-weight:700;
+  margin-right:10px;
+}
+.btn.ghost{
+  background:transparent;color:var(--white);border:1px solid rgba(255,255,255,0.06);
+}
+
+/* hero card */
+.hero-card{
+  background:var(--glass);
+  border-radius:var(--radius);
+  padding:18px;
+  color:var(--muted);
+  border:1px solid rgba(255,255,255,0.03);
+}
+.profile-circle{
+  width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,#0ea5a4,#7c3aed);
+  display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:24px;margin-bottom:12px;
+}
+.quick-stats{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr;gap:8px}
+.quick-stats li{display:flex;flex-direction:column}
+.quick-stats li strong{color:var(--white);font-size:14px}
+.quick-stats li span{color:var(--muted);font-size:13px}
+
+/* sections */
+.section{padding:18px 0 14px 0;color:var(--muted)}
+.section h2{color:var(--white);margin:0 0 10px 0;font-size:18px}
+
+/* projects */
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.project{background:var(--card);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+.project-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.project-header h3{margin:0;color:var(--white);font-size:16px}
+.project .meta{color:var(--muted);font-size:12px}
+.project p{margin:6px 0 10px 0;color:var(--muted);font-size:14px}
+.project-links a{color:var(--accent);text-decoration:none;margin-right:12px;font-weight:700;font-size:13px}
+
+/* education */
+.edu{display:flex;gap:18px;flex-wrap:wrap}
+.edu-item{flex:1 1 320px;background:transparent;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.02)}
+.edu-item h3{margin:0;color:var(--white);font-size:15px}
+.edu-item p{margin:6px 0;color:var(--muted)}
+
+/* contact */
+.contact-grid{display:flex;gap:18px;flex-wrap:wrap}
+.contact-grid p{margin:6px 0;color:var(--muted)}
+
+/* footer */
+.site-footer{padding:18px 0;background:transparent;border-top:1px solid rgba(255,255,255,0.02);margin-top:18px}
+.site-footer p{margin:0;color:var(--muted);font-size:13px}
+
+/* small tweaks */
+@media (max-width:1000px){
+  .projects-grid{grid-template-columns:1fr}
+  .hero-inner{grid-template-columns:1fr}
+}
