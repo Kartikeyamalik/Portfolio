@@ -1,0 +1,15 @@
+/* small devices */
+@media (max-width:760px){
+  :root{--container: 900px}
+  .header-inner{padding:12px 0}
+  .nav{display:none}
+  .nav-toggle{display:block}
+  .hero-inner{grid-template-columns:1fr;gap:14px}
+  .hero-text h1{font-size:26px}
+  .profile-circle{width:84px;height:84px;font-size:20px}
+  .projects-grid{grid-template-columns:1fr}
+  .section{padding:14px 0}
+}
+
+/* mobile nav toggled */
+.nav.open{display:flex;flex-direction:column;gap:8px;padding:12px;background:linear-gradient(180deg, rgba(7,10,15,0.9), rgba(7,10,15,0.95));position:absolute;top:64px;right:20px;border-radius:8px}
